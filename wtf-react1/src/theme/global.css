@@ -1,0 +1,8 @@
+/* @import url('variable.css'); */
+
+:root {
+    --black: #000;
+    --color-primary: white;
+    --color-secondary: blue;
+}
+

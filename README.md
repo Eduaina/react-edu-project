@@ -65,3 +65,113 @@ A build command that bundles your code with Rollup, pre-configured to output hig
 Vite is opinionated and comes with sensible defaults out of the box. Read about what's possible in the Features Guide. Support for frameworks or integration with other tools is possible through Plugins. The Config Section explains how to adapt Vite to your project if needed.
 Vite is also highly extensible via its Plugin API and JavaScript API with full typing support.
 You can learn more about the rationale behind the project in the Why Vite section.
+
+
+
+import './ButtonTask.css'
+ 
+export default function ButtonTask({children, className="", variant="secondary", loading= false , size, ...props} ){
+ 
+ 
+    return(
+      <button className={`primary__btn ${className} btn-${variant} btn-${size}`}  {...props}>
+        {loading ? 'please wait' : children}
+ 
+     </button>
+    )
+}
+ 
+//ButtonTask.css
+ 
+
+
+ 
+.btn-secondary{
+    background-color: green;
+}
+ 
+.btn-primary{
+    background-color: red;
+    font-size: larger;
+}
+ 
+.btn-sm{
+    font-size: smaller;
+}
+ 
+.btn-md{
+    font-size: medium;
+}
+ 
+.btn-lg{
+    font-size: larger;
+}
+ 
+.btn-fullwidth{
+    width: 50px;
+}
+ 
+   
+
+ 
+.btn-secondary{
+    background-color: green;
+}
+ 
+.btn-primary{
+    background-color: red;
+    font-size: larger;
+}
+ 
+.btn-sm{
+    font-size: smaller;
+}
+ 
+.btn-md{
+    font-size: medium;
+}
+ 
+.btn-lg{
+    font-size: larger;
+}
+ 
+.btn-fullwidth{
+    width: 50px;
+}
+ 
+   
+ 
+//App.jsx
+ 
+ 
+import './theme/global.css'
+import ButtonTask from './components/ButtonTask.jsx'
+import Search from './assets/Icons/search.svg?react'
+ 
+ 
+function App() {
+  function check(){
+    console.log("Have been clicked");
+    
+  }
+ 
+  function loader(){
+ 
+  }
+ 
+ 
+return (
+    <>
+    <ButtonTask text="Save" variant="primary"/>
+      <ButtonTask text="Block" variant="secondary" size="lg"/>
+      <ButtonTask loading={true} onClick={check} >
+        Save
+       <Search/>
+      </ButtonTask>
+     
+    </>
+   
+  )
+}
+ 
+export default App
