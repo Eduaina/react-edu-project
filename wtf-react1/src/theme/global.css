@@ -1,11 +1,14 @@
-/* @import url('variable.css'); */
-
 :root {
     /* colors */
     --black: #000;
     --white: white;
-    --aqua: rgb(194, 241, 241);
     --banner-bg-color: #00BEAE;
+
+    /* width */
+
+    /* font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 
 *, *::before, *::after {
