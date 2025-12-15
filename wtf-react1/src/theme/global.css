@@ -1,8 +1,19 @@
 /* @import url('variable.css'); */
 
 :root {
+    /* colors */
     --black: #000;
-    --color-primary: white;
-    --color-secondary: blue;
+    --white: white;
+    --aqua: rgb(194, 241, 241);
+    --banner-bg-color: #00BEAE;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin-inline: auto;
+}

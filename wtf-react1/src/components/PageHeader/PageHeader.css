@@ -1,4 +1,19 @@
-.header .banner {
-    height: 50px;
-    background-color: brown;
+.header .banner, .header .navigation {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.banner {
+    background-color: var(--banner-bg-color);
+    min-height: 35px;
+    color: var(--white)
+}
+
+.navigation {
+    background-color: var(--white);
+    min-height: 52px;
+    outline: 1px solid red;
 }
