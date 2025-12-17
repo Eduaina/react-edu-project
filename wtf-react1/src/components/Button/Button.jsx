@@ -1,11 +1,12 @@
 import React, { forwardRef } from "react";
+import "./Button.css";
 
 
 function cx(...args) {
   return args.filter(Boolean).join(" ");
 }
 
-const Button = forwardRef(function Button(
+export const Button = forwardRef(function Button(
   {
     as,
     variant = "primary",
@@ -25,10 +26,9 @@ const Button = forwardRef(function Button(
   ref
 ) {
   const isDisabled = disabled || loading;
-  // Decide element to render
   const computedAs = as || (href ? "a" : "button");
   const isButton = computedAs === "button";
- 
+
   const classes = cx(
     "btn",
     `btn--${variant}`,
@@ -39,19 +39,18 @@ const Button = forwardRef(function Button(
     rightIcon && "btn--has-right-icon",
     className
   );
- 
-  // If rendering an anchor but disabled, prevent navigation and make it un-focusable
+
   const anchorProps =
     computedAs === "a" && isDisabled
       ? { "aria-disabled": true, onClick: (e) => e.preventDefault(), tabIndex: -1, href: href || "#" }
       : computedAs === "a"
       ? { href }
       : {};
- 
+
   const buttonProps = isButton
     ? { type, disabled: isDisabled, "aria-disabled": isDisabled }
     : { role: "button", "aria-disabled": isDisabled };
- 
+
   function handleClick(e) {
     if (isDisabled) {
       e.preventDefault();
@@ -59,7 +58,7 @@ const Button = forwardRef(function Button(
     }
     if (onClick) onClick(e);
   }
- 
+
   const Content = (
     <>
       {loading && (
@@ -70,9 +69,9 @@ const Button = forwardRef(function Button(
       {rightIcon && <span className="btn__icon btn__icon--right">{rightIcon}</span>}
     </>
   );
- 
+
   const Element = computedAs;
- 
+
   return (
     <Element
       {...buttonProps}

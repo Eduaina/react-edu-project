@@ -3,9 +3,11 @@ import { Hero } from "../../components/HeroSection/Hero";
 
 export function Home () {
     return (
-        <section>
-            <FullHeader />
-            <Hero />
-        </section>
-    )
+      <div className="app-root">
+        <div className="global-wrapper">
+          <FullHeader />
+          <Hero />
+        </div>
+      </div>
+    );
 }

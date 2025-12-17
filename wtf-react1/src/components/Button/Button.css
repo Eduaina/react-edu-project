@@ -1,0 +1,51 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.btn--primary { 
+    background: var(--teal); 
+    color: white; 
+    border-radius: 6px; 
+}
+
+.btn--primary:hover:not(.btn--disabled) { 
+    background: #008f8c; 
+    transform: translateY(-2px);
+}
+
+.btn--indigo { 
+    background: #4F46E5; 
+    color: white; 
+    border-radius: 999px; 
+}
+
+.btn--ghost { 
+    background: transparent; 
+    color: var(--text-gray); 
+}
+
+.btn--md { 
+    padding: 0.75rem 1.5rem; 
+    font-size: 0.875rem; 
+}
+
+.btn--lg { 
+    padding: 1.125rem 2.25rem; 
+    font-size: 1rem; 
+}
+
+.btn--disabled { 
+    opacity: 0.5; 
+    cursor: not-allowed; 
+}
+
+.btn__icon--right { 
+    margin-left: 0.5rem;
+}
