@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import "./theme/global.css"
-import { LandingPage } from './pages/Landing/index'
+import { Home } from './pages/Home/index'
 
 function App() {
   return (

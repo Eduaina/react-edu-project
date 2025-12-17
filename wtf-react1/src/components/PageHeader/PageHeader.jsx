@@ -4,9 +4,9 @@ import { PageBanner } from "./PageBanner";
 
 export function FullHeader() {
   return (
-    <section className="header">
+    <header className="header">
       <PageBanner />
       <PageNavigation />
-    </section>
+    </header>
   );
 }
