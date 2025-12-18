@@ -16,14 +16,16 @@
 }
 
 body {
-  max-width: 1920px;
+  max-width: var(--max-width);
   width: 100%;
   margin-inline: auto;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
   background: #fff;
   color: var(--navy);
   overflow-x: hidden;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .global-wrapper {
@@ -52,7 +54,7 @@ body {
 
 .grid-2 {
    display: grid; 
-   gap: 3rem; 
+   gap: 3rem;
    align-items: center; 
   }
 

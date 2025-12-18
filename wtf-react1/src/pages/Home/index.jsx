@@ -5,9 +5,12 @@ export function Home () {
     return (
       <div className="app-root">
         <div className="global-wrapper">
-          <FullHeader />
-          <Hero />
+          <div className="container">
+            <FullHeader />
+            <Hero />
+          </div>
         </div>
       </div>
     );
 }
+
