@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import "./theme/global.css"
-import { Home } from "./pages/Home/index"
+import { Home } from "./pages/Home/Home"
 
 function App() {
   return (
