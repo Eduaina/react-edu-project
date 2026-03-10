@@ -64,7 +64,6 @@ export function Hero () {
           </div>
           <div className="floating-card card-2">
             <div className="icon-wrap bg-teal">
-              {/* <Star size={24} /> */}
             </div>
             <div>
               <p className="sub">Top Rated</p>
