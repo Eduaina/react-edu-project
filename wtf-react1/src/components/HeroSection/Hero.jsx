@@ -5,10 +5,10 @@ export function Hero () {
     <section className="hero">
       <div className="container grid-2">
         <div className="hero__content">
-          <span className="badge">EDUCATION & ONLINE LEARNING</span>
+          <span className="badge">EDUCATION & VIRTUAL - ONLINE LEARNING</span>
           <h1 className="hero__title">
             Discover Your <span className="text-teal">Potential</span> With
-            Online Education.
+            Online(Virtual) Education.
           </h1>
           <p className="hero__desc">
             Choose from over 10,000 online video courses with new additions
