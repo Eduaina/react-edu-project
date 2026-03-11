@@ -30,7 +30,7 @@ export function Hero () {
           <div className="hero__stats">
             <div className="stat-item">
               <h4>25K+</h4>
-              <p>Students</p>
+              <p>Students Hub</p>
             </div>
             <div className="stat-item">
               <h4>890+</h4>
