@@ -53,6 +53,7 @@ export function Hero () {
                 "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80")
             }
           />
+
           <div className="floating-card card-1">
             <div className="icon-wrap bg-orange">
               {/* <Users size={24} /> */}
@@ -62,6 +63,7 @@ export function Hero () {
               <p className="val">1,200+ Students</p>
             </div>
           </div>
+
           <div className="floating-card card-2">
             <div className="icon-wrap bg-teal">
             </div>
@@ -69,6 +71,10 @@ export function Hero () {
               <p className="sub">Top Rated</p>
               <p className="val">Certified</p>
             </div>
+          </div>
+
+          <div className="floating-card card-3">
+            <div>Anything i want</div>
           </div>
         </div>
       </div>
