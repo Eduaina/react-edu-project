@@ -11,7 +11,7 @@ export function Hero () {
             Online Education.
           </h1>
           <p className="hero__desc">
-            Choose from over 5,000 online video courses with new additions
+            Choose from over 10,000 online video courses with new additions
             published every month.
           </p>
 
